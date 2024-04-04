@@ -6,7 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
-@ComponentScan(basePackages = {"guru.springframework.sfgdi", "com.springframework.pets"})
+//@ComponentScan(basePackages = {"guru.springframework.sfgdi", "com.springframework.pets"})
+		// With the java configuration we are treating the packages as managed as third party
+		// and we no longer need to define the ComponentScan Annotation
 @SpringBootApplication
 public class SfgDiApplication {
 
